@@ -12,7 +12,7 @@ public class CheckOut {
     public static void main(String[] args) throws InterruptedException {
 
         //Set the system property for Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\d.nicholson\\OneDrive - Accenture\\Desktop\\Test Scripts\\Selenium WebDrivers\\Chrome Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "add directory here/chromedriver.exe");
         //Create driver object for Chrome browser
         WebDriver driver = new ChromeDriver();
 
@@ -142,7 +142,7 @@ public class CheckOut {
         //The try catch block below does not require a throws Exception above in the method
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileHandler.copy(screenshot, new File("C:\\Users\\d.nicholson\\OneDrive - Accenture\\Desktop\\Test Scripts\\Screens/image.png"));
+            FileHandler.copy(screenshot, new File("add directory here"));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
