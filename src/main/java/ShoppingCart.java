@@ -8,7 +8,7 @@ public class ShoppingCart {
     public static void main(String[] args) throws InterruptedException {
 
         //Set the system property for Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\d.nicholson\\OneDrive - Accenture\\Desktop\\Test Scripts\\Selenium WebDrivers\\Chrome Drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "add directory here/chromedriver.exe");
         //Create driver object for Chrome browser
         WebDriver driver = new ChromeDriver();
 
